@@ -3,7 +3,7 @@
 
 AUTHOR = 'gauravssnl'
 SITENAME = 'Gaurav'
-SITEURL = 'https://gauravssnl.github.io/'
+SITEURL = 'https://gauravssnl.github.io'
 
 PATH = 'content'
 
