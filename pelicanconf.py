@@ -75,9 +75,25 @@ PLUGINS = [
     "share_post",
     "tipue_search",
 ]
-# SITEMAP = {
-#     "format": "xml",
-#     "priorities": {"articles": 0.5, "indexes": 0.5, "pages": 0.5},
-#     "changefreqs": {"articles": "monthly", "indexes": "daily", "pages": "monthly"},
-# }
 
+SITEMAP = {
+    "format": "xml",
+    "priorities": {"articles": 0.5, "indexes": 0.5, "pages": 0.5},
+    "changefreqs": {"articles": "monthly", "indexes": "daily", "pages": "monthly"},
+}
+
+# Hide About
+DISPLAY_PAGES_ON_MENU = True
+DISPLAY_CATEGORIES_ON_MENU = True
+USE_FOLDER_AS_CATEGORY = False
+PAGE_PATHS = ['pages']
+# Add page titles here if you don't want them linked to automatically
+EXCLUDED_PAGES = ['Web Chat']
+
+# Additional main menue items
+# MENUITEMS = [
+#     ('<i class="fas fa-info-circle"></i> About', '/pages/about.html'),
+#     ('<i class="fas fa-file-powerpoint"></i> Presentations', '/pages/presentations.html'),
+#     ('<i class="fab fa-discord"></i> Discord Chat <i class="fas fa-external-link-alt"></i>', 'https://discord.gg/ch7TPCx'),
+#     ('<i class="fab fa-meetup"></i> Meetup Group <i class="fas fa-external-link-alt"></i>', 'https://www.meetup.com/Phoenix-Python-Meetup-Group/'),
+# ]
