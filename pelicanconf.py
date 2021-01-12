@@ -37,7 +37,7 @@ RELATIVE_URLS = True
 # THEME = "notmyidea"
 # THEME = "simple"
 # CSS_FILE = "wide.css"
-# THEME = "themes/elegant-master"
+THEME = "themes/elegant-master"
 
 ARTICLE_PATHS = ['blog']
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
@@ -50,7 +50,7 @@ FOOTER_LINKS = (('Pelican', 'https://getpelican.com/'),
          ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
          ('You can modify those links in your config file', '#'),)
 
-# DIRECT_TEMPLATES = ['404', 'search']
+DIRECT_TEMPLATES = ['404', 'search']
 
 # Plugins and extensions
 MARKDOWN = {
