@@ -3,7 +3,7 @@
 
 AUTHOR = 'gauravssnl'
 SITENAME = 'Gaurav'
-SITEURL = ''
+SITEURL = 'https://gauravssnl.github.io'
 
 PATH = 'content'
 
@@ -76,19 +76,19 @@ PLUGINS = [
     "tipue_search",
 ]
 
-SITEMAP = {
-    "format": "xml",
-    "priorities": {"articles": 0.5, "indexes": 0.5, "pages": 0.5},
-    "changefreqs": {"articles": "monthly", "indexes": "daily", "pages": "monthly"},
-}
+# SITEMAP = {
+#     "format": "xml",
+#     "priorities": {"articles": 0.5, "indexes": 0.5, "pages": 0.5},
+#     "changefreqs": {"articles": "monthly", "indexes": "daily", "pages": "monthly"},
+# }
 
 # Hide About
-DISPLAY_PAGES_ON_MENU = True
-DISPLAY_CATEGORIES_ON_MENU = True
-USE_FOLDER_AS_CATEGORY = False
-PAGE_PATHS = ['pages']
-# Add page titles here if you don't want them linked to automatically
-EXCLUDED_PAGES = ['Web Chat']
+# DISPLAY_PAGES_ON_MENU = True
+# DISPLAY_CATEGORIES_ON_MENU = True
+# USE_FOLDER_AS_CATEGORY = False
+# PAGE_PATHS = ['pages']
+# # Add page titles here if you don't want them linked to automatically
+# EXCLUDED_PAGES = ['Web Chat']
 
 # Additional main menue items
 # MENUITEMS = [
