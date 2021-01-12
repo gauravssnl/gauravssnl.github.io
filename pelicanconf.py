@@ -31,7 +31,7 @@ AUTHOR_FEED_RSS = None
 DEFAULT_PAGINATION = 20
 
 # Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+RELATIVE_URLS = True
 # import alchemy
 # THEME = alchemy.path()
 # THEME = "notmyidea"
