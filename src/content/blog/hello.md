@@ -5,7 +5,8 @@ Slug: hello
 Tags: python, rust
 
 
-Hi everyone. This is my first post on this new blog. In this post, I am going to share how to print Hello World in Rust and Python. You might ask me why did I pick only these languages. They are my favorite as of now.
+Hi everyone. This is my first post on this new blog. In this post, I am going to share how to print Hello World in Rust, Python and Go programming languages. You might ask me why did I pick only these languages. They are my favorite as of now.
+
 Please stay tuned for more updates. More articles are coming soon.
 
 # Rust
@@ -24,6 +25,21 @@ fn main() {
 print("Hello, World!")
 ```
 
+# Go
+
+```go
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	fmt.Println("Hello, World!")
+}
+
+```
 I hope you liked this article. Let me know your feedback.
 
 Thanks,
