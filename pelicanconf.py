@@ -50,7 +50,7 @@ FOOTER_LINKS = (('Pelican', 'https://getpelican.com/'),
          ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
          ('You can modify those links in your config file', '#'),)
 
-DIRECT_TEMPLATES = ['404', 'search']
+DIRECT_TEMPLATES = ['404', 'search', 'index']
 
 # Plugins and extensions
 MARKDOWN = {
