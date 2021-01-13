@@ -31,7 +31,7 @@ AUTHOR_FEED_RSS = None
 DEFAULT_PAGINATION = 20
 
 # Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+RELATIVE_URLS = True
 # import alchemy
 # THEME = alchemy.path()
 # THEME = "notmyidea"
@@ -41,7 +41,7 @@ THEME = "themes/elegant-master"
 
 ARTICLE_PATHS = ['blog']
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
-ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
+ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}'
 
 TWITTER_USERNAME = "gauravssnl"
 
@@ -86,7 +86,7 @@ PLUGINS = [
 # DISPLAY_PAGES_ON_MENU = True
 # DISPLAY_CATEGORIES_ON_MENU = True
 # USE_FOLDER_AS_CATEGORY = False
-# PAGE_PATHS = ['pages']
+PAGE_PATHS = ['pages']
 # # Add page titles here if you don't want them linked to automatically
 # EXCLUDED_PAGES = ['Web Chat']
 
