@@ -6,7 +6,7 @@ Tags: Newtork Programming, Rust, Socket, TcpStream
 Slug: rust-how-to-read-all-the-data-of-a-tcpstream-socket-completely
 Status: published
 
-`<!-- wp:paragraph -->`{=html}
+[//]: `<!-- wp:paragraph -->`{=html}
 
 Hi everyone. I have started learning Rust and I tried creating a project [RServer](https://github.com/gauravssnl/rserver) which is an app for intercepting/capturing TCP requests sent by browser and other apps running on a system. While developing [RServer](https://github.com/gauravssnl/rserver) , I faced an issue while trying to read the complete data from a [TcpStream](https://doc.rust-lang.org/std/net/struct.TcpStream.html) struct. [TcpStream](https://doc.rust-lang.org/std/net/struct.TcpStream.html) has only [read](https://doc.rust-lang.org/std/net/struct.TcpStream.html#impl-Read) method , but socket /TCP streams constructs do not have method such as **read_all** to read all the data from the stream. In this post, I am going to share my technique which I used in [RServer](https://github.com/gauravssnl/rserver) .
 
