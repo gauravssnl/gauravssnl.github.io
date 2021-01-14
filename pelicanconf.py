@@ -31,9 +31,17 @@ AUTHOR_FEED_RSS = None
 #          ('You can modify those links in your config file', '#'),)
 
 # # Social widget
-# SOCIAL = (('You can add links in your config file', '#'),
-#           ('Another social link', '#'),)
+SOCIAL = (
+    ("Github", "https://github.com/gauravssnl", "Github"),
+    ("LinkedIn", "https://www.linkedin.com/in/gauravssnl/", "LinkedIn"),
+    ("Twitter", "https://twitter.com/gauravssnl", "Twitter"),
+    ('Email', 'gauravssnl@gmail.com', 'My Email Address', "Email"),
+    ("RSS", SITEURL + "/feeds/all.atom.xml", "RSS"),
+    
+)
+SOCIAL_PROFILE_LABEL = u'Stay in Touch'
 
+# Pagination
 DEFAULT_PAGINATION = 20
 
 # Uncomment following line if you want document-relative URLs when developing
