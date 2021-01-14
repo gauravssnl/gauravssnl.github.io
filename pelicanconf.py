@@ -4,7 +4,13 @@
 AUTHOR = 'gauravssnl'
 SITENAME = 'Gaurav'
 SITEURL = 'https://gauravssnl.github.io'
-
+# Legal
+SITE_LICENSE = """
+&copy; Copyright 2020 by Gaurav (@gauravssnl) and licensed under a <a rel="license"
+  href="http://creativecommons.org/licenses/by/4.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+  Creative Commons Attribution 4.0 International License</a>.
+"""
 PATH = 'content'
 
 TIMEZONE = 'Asia/Kolkata'
@@ -41,7 +47,7 @@ THEME = "themes/elegant-master"
 
 ARTICLE_PATHS = ['blog']
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
-ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}'
+ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
 
 TWITTER_USERNAME = "gauravssnl"
 
@@ -86,7 +92,7 @@ PLUGINS = [
 # DISPLAY_PAGES_ON_MENU = True
 # DISPLAY_CATEGORIES_ON_MENU = True
 # USE_FOLDER_AS_CATEGORY = False
-PAGE_PATHS = ['pages']
+# PAGE_PATHS = ['pages']
 # # Add page titles here if you don't want them linked to automatically
 # EXCLUDED_PAGES = ['Web Chat']
 
