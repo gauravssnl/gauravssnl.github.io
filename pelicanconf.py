@@ -90,6 +90,7 @@ PLUGINS = [
     "tipue_search",
     "post_stats",
     "sitemap",
+    "assets",
 ]
 
 SITEMAP = {
