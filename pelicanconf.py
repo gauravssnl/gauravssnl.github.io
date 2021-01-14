@@ -80,13 +80,15 @@ PLUGINS = [
     "series",
     "share_post",
     "tipue_search",
+    "post_stats",
+    "sitemap",
 ]
 
-# SITEMAP = {
-#     "format": "xml",
-#     "priorities": {"articles": 0.5, "indexes": 0.5, "pages": 0.5},
-#     "changefreqs": {"articles": "monthly", "indexes": "daily", "pages": "monthly"},
-# }
+SITEMAP = {
+    "format": "xml",
+    "priorities": {"articles": 0.5, "indexes": 0.5, "pages": 0.5},
+    "changefreqs": {"articles": "monthly", "indexes": "daily", "pages": "monthly"},
+}
 
 # Hide About
 # DISPLAY_PAGES_ON_MENU = True
@@ -103,3 +105,9 @@ PLUGINS = [
 #     ('<i class="fab fa-discord"></i> Discord Chat <i class="fas fa-external-link-alt"></i>', 'https://discord.gg/ch7TPCx'),
 #     ('<i class="fab fa-meetup"></i> Meetup Group <i class="fas fa-external-link-alt"></i>', 'https://www.meetup.com/Phoenix-Python-Meetup-Group/'),
 # ]
+
+STATIC_PATHS = ['images', 'extra/robots.txt', 'extra/favicon.ico']
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/favicon.ico': {'path': 'favicon.ico'}
+}
