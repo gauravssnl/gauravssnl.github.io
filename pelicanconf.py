@@ -4,7 +4,13 @@
 AUTHOR = 'gauravssnl'
 SITENAME = 'Gaurav'
 SITEURL = 'https://gauravssnl.github.io'
-
+# Legal
+SITE_LICENSE = """
+&copy; Copyright 2020 by Gaurav (@gauravssnl) and licensed under a <a rel="license"
+  href="http://creativecommons.org/licenses/by/4.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+  Creative Commons Attribution 4.0 International License</a>.
+"""
 PATH = 'content'
 
 TIMEZONE = 'Asia/Kolkata'
@@ -25,13 +31,21 @@ AUTHOR_FEED_RSS = None
 #          ('You can modify those links in your config file', '#'),)
 
 # # Social widget
-# SOCIAL = (('You can add links in your config file', '#'),
-#           ('Another social link', '#'),)
+SOCIAL = (
+    ("Github", "https://github.com/gauravssnl", "Github"),
+    ("LinkedIn", "https://www.linkedin.com/in/gauravssnl/", "LinkedIn"),
+    ("Twitter", "https://twitter.com/gauravssnl", "Twitter"),
+    ('Email', 'gauravssnl@gmail.com', 'My Email Address', "Email"),
+    ("RSS", SITEURL + "/feeds/all.atom.xml", "RSS"),
+    
+)
+SOCIAL_PROFILE_LABEL = u'Stay in Touch'
 
+# Pagination
 DEFAULT_PAGINATION = 20
 
 # Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+RELATIVE_URLS = True
 # import alchemy
 # THEME = alchemy.path()
 # THEME = "notmyidea"
@@ -74,13 +88,16 @@ PLUGINS = [
     "series",
     "share_post",
     "tipue_search",
+    "post_stats",
+    "sitemap",
+    "assets",
 ]
 
-# SITEMAP = {
-#     "format": "xml",
-#     "priorities": {"articles": 0.5, "indexes": 0.5, "pages": 0.5},
-#     "changefreqs": {"articles": "monthly", "indexes": "daily", "pages": "monthly"},
-# }
+SITEMAP = {
+    "format": "xml",
+    "priorities": {"articles": 0.5, "indexes": 0.5, "pages": 0.5},
+    "changefreqs": {"articles": "monthly", "indexes": "daily", "pages": "monthly"},
+}
 
 # Hide About
 # DISPLAY_PAGES_ON_MENU = True
@@ -97,3 +114,9 @@ PLUGINS = [
 #     ('<i class="fab fa-discord"></i> Discord Chat <i class="fas fa-external-link-alt"></i>', 'https://discord.gg/ch7TPCx'),
 #     ('<i class="fab fa-meetup"></i> Meetup Group <i class="fas fa-external-link-alt"></i>', 'https://www.meetup.com/Phoenix-Python-Meetup-Group/'),
 # ]
+
+STATIC_PATHS = ['images', 'extra/robots.txt', 'extra/favicon.ico']
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/favicon.ico': {'path': 'favicon.ico'}
+}
