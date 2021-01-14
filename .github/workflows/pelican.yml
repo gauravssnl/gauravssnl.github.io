@@ -5,7 +5,7 @@ on:
   # but only for the master branch
   push:
     branches:
-      - dev
+      - wp-export
 
 jobs:
   build:
