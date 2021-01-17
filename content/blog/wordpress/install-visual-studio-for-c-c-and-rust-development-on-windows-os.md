@@ -18,10 +18,7 @@ In this post, we are going to setup C/C++ development environment by using Visua
 # Steps 
 
 1.  Launch Visual Studio Installer & it will launch a dialog showing the Build Tool Workloads. Check the **Desktop development with C++ **workload (as shown in screenshot below) and then click on **Install** . I have also installed C++ Clang tools for Windows.
-
-
 ![](https://gauravssnl.files.wordpress.com/2020/06/image.png?w=1024)
-
 2. It might take a while to install all the selected tools depending your internet speed and your system. You might have to restart your system for the complete setup.
 
 3. Click on Windows Start Menu & then type **Developer** and you should see the following screen ( as shown below). Click on **Developer Command Prompt for VS 2019** ( depending upon your version) and launch it.
