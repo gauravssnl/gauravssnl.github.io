@@ -83,7 +83,7 @@ sudo apt-get install mysql-server
 sudo cpan
 ```
 Now **cpan** prompt will appear.Type these on prompt:
-```console
+```shell
 cpan\> install DBI
 cpan\> install DBD:mysql
 ```
