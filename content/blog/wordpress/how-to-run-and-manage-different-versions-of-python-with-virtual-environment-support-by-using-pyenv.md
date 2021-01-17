@@ -11,7 +11,7 @@ Thanks : [Yamashita](https://github.com/yyuu)  (Author of **pyenv**)
 
 # Steps 
 
-1\. Use [pyenv-installer](http://$%20curl%20-L%20https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer%20%7C%20bas)] to install pyenv.You can install pyenv by using this command on Terminal :
+1\. Use [pyenv-installer](http://$%20curl%20-L%20https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer%20%7C%20bas) to install pyenv.You can install pyenv by using this command on Terminal :
 ```console
 $ curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
 ```
