@@ -124,7 +124,9 @@ sudo apt install php7.0-mbstring
 
  
 11\. To enable PHP to connect with MySQL, use this command:
-[sudo apt install php-mysql]
+```bash
+sudo apt install php-mysql
+```
 
 12\. All the steps are complete now if all the previous steps are completed successfully .You need to place PERL CGI files in /var/www/cgi-bin/ directory so that you can access them in browser with URL http://localhost/cgi-bin/cgi.pl   .You need to write HTML and PHP files in /var/www/html directory so that you can acesss them in browser with URL http://localhost/index.html
 
