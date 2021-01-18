@@ -33,7 +33,9 @@ CONS:
 
 1.Lacks Multi-threaded Connection
 
-2\. No Custom Header Support![newscreenshotapp190](https://gauravssnl.files.wordpress.com/2015/12/newscreenshotapp1902.jpg)
+2\. No Custom Header Support
+
+![newscreenshotapp190](https://gauravssnl.files.wordpress.com/2015/12/newscreenshotapp1902.jpg)
 
 
 **Settings Screenshots**
