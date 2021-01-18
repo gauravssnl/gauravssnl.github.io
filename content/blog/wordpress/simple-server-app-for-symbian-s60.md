@@ -15,7 +15,7 @@ This is just an application for tweaking HTTP/HTTPS Requests, such as applicatio
 
 **Requirements:**
 
-\- SymbianS60 v3, v5, \^3, and up.
+\- SymbianS60 v3, v5, ^3, and up.
 
 \- [Python_2.0.0](https://garage.maemo.org/frs/?group_id=854)
 
