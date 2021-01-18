@@ -31,14 +31,14 @@ python
 
 **Python v2 installation** :
 
-1.Use this command to install python2 :
+1\. Use this command to install python2 :
 ```bash
 apt install python2
 ```
 
 ![screenshot_20161231-082740](https://gauravssnl.files.wordpress.com/2017/01/screenshot_20161231-082740.png)
 
-2.To run python2, use this command: 
+2\. To run python2, use this command: 
 ```bash
 apt install python2
 ```
