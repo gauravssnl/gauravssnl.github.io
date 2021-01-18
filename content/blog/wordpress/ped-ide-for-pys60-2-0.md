@@ -10,7 +10,7 @@ This PED IDE is based on PyS60 2.0(Python 2.5.4) and has been developed by **Vit
 *Developer:*
 
 **Vitaly**
-\
+
 **Ibnu Wahyudi**
 
 Download: [Ped python2.5 - fix drive.zip](https://www.dropbox.com/s/vc1yu156rc975zq/Ped%20python25%20-%20fix%20drive.zip?dl=0)
