@@ -5,7 +5,7 @@ Category: S60, SYMBIAN
 Slug: hacking-nokia-symbian-s60-v3v5-phone-to-remove-certificate-error-issue
 Status: published
 
-Hacking a Nokia Symbian S60 device to remove Certificate Error is an easy task.It is much easier than rooting an Android Phone.We do not require Computer for hacking a Symbian S60 device.So,let us get started.
+Hacking a Nokia Symbian S60 device to remove Certificate Error is an easy task. It is much easier than rooting an Android Phone.We do not require Computer for hacking a Symbian S60 device. So,let us get started.
 
 Tools/Applications Required:                        
 
@@ -35,15 +35,8 @@ Steps:                                                 �
 
 ![IMG_20160802_155819](https://gauravssnl.files.wordpress.com/2016/08/img_20160802_155819.jpg){.size-full .wp-image-642 .aligncenter width="240" height="320"}
 
-7.Now,your Nokia Symbian S60 phone is successfully hacked.You can install unsigned applications,access C://Sys directory .
+7.Now,your Nokia Symbian S60 phone is successfully hacked.You can install unsigned applications, access `C://Sys` directory .
 
 Happy Hacking.I hope this tutorial for them who are still using Symbian S60 phones.If you encounter any error or you have any questions, post your questions in comments.
 
-gauravssnl
-
-```{=html}
-</p>
-```
-`<!-- wp:paragraph -->`{=html}
-
-`<!-- /wp:paragraph -->`{=html}
+@gauravssnl

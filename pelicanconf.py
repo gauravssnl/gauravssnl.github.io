@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = 'gauravssnl'
-SITENAME = 'Gaurav'
+SITENAME = 'Gauravssnl Tech Blog'
 SITEURL = 'https://gauravssnl.github.io'
 # Legal
 SITE_LICENSE = """
@@ -55,7 +55,7 @@ THEME = "themes/elegant-master"
 
 ARTICLE_PATHS = ['blog']
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
-ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
+ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}'
 
 TWITTER_USERNAME = "gauravssnl"
 
@@ -115,8 +115,9 @@ SITEMAP = {
 #     ('<i class="fab fa-meetup"></i> Meetup Group <i class="fas fa-external-link-alt"></i>', 'https://www.meetup.com/Phoenix-Python-Meetup-Group/'),
 # ]
 
-STATIC_PATHS = ['images', 'extra/robots.txt', 'extra/favicon.ico']
+STATIC_PATHS = ['images', 'extra/robots.txt', 'extra/favicon.ico', 'extra/googlec4c83e4356cde945.html']
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
-    'extra/favicon.ico': {'path': 'favicon.ico'}
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/googlec4c83e4356cde945.html': {'path' : 'googlec4c83e4356cde945.html'},
 }

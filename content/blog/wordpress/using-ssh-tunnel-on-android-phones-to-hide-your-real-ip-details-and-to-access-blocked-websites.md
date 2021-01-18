@@ -5,9 +5,9 @@ Category: Android
 Slug: using-ssh-tunnel-on-android-phones-to-hide-your-real-ip-details-and-to-access-blocked-websites
 Status: published
 
-Hello everyone.Today,I am going to share how to use SSH Tunnel on Android phones.SSH can be used for hiding your real IP address and for accessing Blocked Websites of your country(Bypassing Censorship).At first,I would like to tell what SSH is.SSH is an abbreviation of Secure Shell.On Wikipedia,[SSH](https://en.m.wikipedia.org/wiki/Secure_Shell) is described as:
+Hello everyone.Today,I am going to share how to use SSH Tunnel on Android phones.SSH can be used for hiding your real IP address and for accessing Blocked Websites of your country(Bypassing Censorship).At first,I would like to tell what SSH is.SSH is an abbreviation of Secure Shell.On Wikipedia, [SSH](https://en.m.wikipedia.org/wiki/Secure_Shell) is described as:
 
-Secure Shell ([SSH](https://en.m.wikipedia.org/wiki/Secure_Shell) ) is a cryptographic network protocol for operating network services securely over an unsecured network. \[1\] The best known example application is for remote login to computer systems by users.
+Secure Shell ([SSH](https://en.m.wikipedia.org/wiki/Secure_Shell) ) is a cryptographic network protocol for operating network services securely over an unsecured network.The best known example application is for remote login to computer systems by users.
 
 **Tools** **Required**:
 

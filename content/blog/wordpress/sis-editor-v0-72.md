@@ -13,6 +13,6 @@ SIS EDITOR  features:
 
 3.Sign any Symbian app
 
-Download: [[SIS Editor](https://www.dropbox.com/s/pqtydiij9ee5m40/SiS_Editor%40gauravssnl.sisx?dl=0)]{style="color:#00ff00;"}
+Download: [SIS Editor](https://www.dropbox.com/s/pqtydiij9ee5m40/SiS_Editor%40gauravssnl.sisx?dl=0)
 
-\[gallery ids="91,90,92" type="rectangular"\]
+![https://gauravssnl.files.wordpress.com/2015/12/newscreenshotapp202.jpg?w=215&h=382](https://gauravssnl.files.wordpress.com/2015/12/newscreenshotapp202.jpg?w=215&h=382) ![https://gauravssnl.files.wordpress.com/2015/12/newscreenshotapp200.jpg?w=215&h=382](https://gauravssnl.files.wordpress.com/2015/12/newscreenshotapp200.jpg?w=215&h=382) ![https://gauravssnl.files.wordpress.com/2015/12/newscreenshotapp201.jpg?w=214&h=382](https://gauravssnl.files.wordpress.com/2015/12/newscreenshotapp201.jpg?w=214&h=382)
