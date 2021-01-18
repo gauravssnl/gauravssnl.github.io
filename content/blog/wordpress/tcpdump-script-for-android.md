@@ -17,53 +17,55 @@ tcpdump works on most Unix-like operating systems: Linux, Solaris, BSD, OS X, HP
 
 **STEPS:**
 
-1.Fist trick:
+1.First trick:
 
-Download and move *tcpdump *script to **/system/bin **folder using file manager like Xplore File manager.Use Xplore or any Filemanager with "Superuser + Mount" mode for changing file permissions.Now,go to  */system/bin/tcpdump * file and change its permission to **777 **as shown in screenshot.
+Download and move *tcpdump *script to **/system/bin** folder using file manager like Xplore File manager. Use Xplore or any Filemanager with "Superuser + Mount" mode for changing file permissions.Now,go to  */system/bin/tcpdump* file and change its permission to **777** as shown in screenshot.
 
-Note: Your **/system **folder must have read & write permission.![Screenshot_2016-08-24-22-51-34](https://gauravssnl.files.wordpress.com/2016/08/screenshot_2016-08-24-22-51-34.png){.alignnone .size-full .wp-image-820 width="720" height="1280"}
+Note: Your **/system** folder must have read & write permission.
+
+![Screenshot_2016-08-24-22-51-34](https://gauravssnl.files.wordpress.com/2016/08/screenshot_2016-08-24-22-51-34.png)
 
 Another trick:
 
-Consider that **tcpdump** script which i downloaded is in **/sdcard/download **folder.Then you can type these commands in terminal to copy file **tcpdump** to **/system/bin **and for changing file permission of **tcpdump **to *777 *(see screnshot).Type these in terminal carefully as shown in screenshot:![Screenshot_2016-08-24-23-18-22](https://gauravssnl.files.wordpress.com/2016/08/screenshot_2016-08-24-23-18-22.png){.alignnone .size-full .wp-image-839 width="720" height="1280"}
+Consider that **tcpdump** script which i downloaded is in **/sdcard/download** folder.Then you can type these commands in terminal to copy file **tcpdump** to **/system/bin** and for changing file permission of **tcpdump** to *777* (see screnshot).Type these in terminal carefully as shown in screenshot:
 
-[su                                                                                                     ]{style="color:#ff0000;"}
+![Screenshot_2016-08-24-23-18-22](https://gauravssnl.files.wordpress.com/2016/08/screenshot_2016-08-24-23-18-22.png)
 
-[mount -o remount,rw  /system]{style="color:#ff0000;"}
+```bash
+su
+mount -o remount,rw  /system
+cp /sdcard/download/tcpdump /system/bin
+cd /system/bin
+chmod 777 tcpdump
+mount -o remount,ro /system
+```
+2.Now,you have succesfully placed **tcpdump** in **/system/bin**.To run **tcpdump**, simply type this on Terminal as shown in screenshot:
 
-[cp /sdcard/download/tcpdump /system/bin]{style="color:#ff0000;"}
+`tcpdump`
 
-[cd /system/bin]{style="color:#ff0000;"}
+![Screenshot_2016-08-24-23-39-10.png](https://gauravssnl.files.wordpress.com/2016/08/screenshot_2016-08-24-23-39-10.png)
 
-[chmod 777 tcpdump]{style="color:#ff0000;"}
+You can clearly see **tcpdump** running and all data packets sent on Terminal screen.
 
-[mount -o remount,ro /system]{style="color:#ff0000;"}
+If you want to save this log to a file *l.cap* for later analysis ,you can use this command in Terminal as shown in screenshot :
+```bash
+tcpdump -vv -s 0 -w /sdcard/l.cap
+```
 
-2.Now,you have succesfully placed **tcpdump** in **/system/bin **.To run **tcpdump **,simply type this on Terminal as shown in screenshot:
-
-*tcpdump![Screenshot_2016-08-24-23-39-10.png](https://gauravssnl.files.wordpress.com/2016/08/screenshot_2016-08-24-23-39-10.png){.alignnone .size-full .wp-image-859 width="720" height="1280"}*
-
-You can clearly see **tcpdump **running and all data packets sent on Terminal screen.
-
-If you want to save this log to a file *l.cap *for later analysis ,you can use this command in Terminal as shown in screenshot :
-
-**[tcpdump -vv -s 0 -w /sdcard/l.cap]{style="color:#ff0000;"} **
-
-![Screenshot_2016-08-24-23-18-22](https://gauravssnl.files.wordpress.com/2016/08/screenshot_2016-08-24-23-18-221.png){.alignnone .size-full .wp-image-872 width="721" height="1280"}
+![Screenshot_2016-08-24-23-18-22](https://gauravssnl.files.wordpress.com/2016/08/screenshot_2016-08-24-23-18-221.png)
 
 The options used are explained as:
 
-**-vv : **puts tcpdump into verbose mode
+**-vv :** puts tcpdump into verbose mode
 
-**-s 0 : **sets the program to grab all packets
+**-s 0 :** sets the program to grab all packets
 
-**-w : **writes the output to a file
+**-w :** writes the output to a file
 
 The output file l.cap generated will be as shown in screenshot.This file can be analyzed application using Wireshark.
 
-![Screenshot_2016-08-24-23-20-25](https://gauravssnl.files.wordpress.com/2016/08/screenshot_2016-08-24-23-20-25.png){.alignnone .size-full .wp-image-890 width="720" height="1280"}
+![Screenshot_2016-08-24-23-20-25](https://gauravssnl.files.wordpress.com/2016/08/screenshot_2016-08-24-23-20-25.png)
 
- 
 
 Now,you successfully know how to use tcmpdump to intercept all data packets.
 
