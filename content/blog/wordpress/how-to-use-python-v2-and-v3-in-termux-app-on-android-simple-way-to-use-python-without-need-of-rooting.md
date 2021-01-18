@@ -7,7 +7,7 @@ Status: published
 
 Today,I am gonna share how to use Python in Termux app on Android phone without need of rooting . It's very simple and easy way to use Python. Thanks to the developer of Termux , Fredrik Fornwall.
 
-**Python v3 installation : **
+**Python v3 installation :**
 
 1.Open Termux app and type this command:
 ```bash
