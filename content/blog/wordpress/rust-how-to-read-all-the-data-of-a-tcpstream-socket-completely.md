@@ -11,32 +11,43 @@ Hi everyone. I have started learning Rust and I tried creating a project [RServe
 As we do not have any built-in method to read the [TcpStream](https://doc.rust-lang.org/std/net/struct.TcpStream.html) completely in one go , we obviously need to use some kind of loop to read the complete data from a given stream. Let us consider that we want to read all the data and we need to return the data and its length/size.
 
 ```rust
-    /// Read the stream data and return stream data & its length
-    fn read_stream(stream: &mut TcpStream) -> (Vec, usize) {
-        let buffer_size = 512;
-        let mut request_buffer = vec![];
-        // let us loop & try to read the whole request data
-        let mut request_len = 0usize;
-        loop {
-            let mut buffer = vec![0; buffer_size];
-            match stream.read(&mut buffer) {
-                Ok(n) => {
-                   
-                    if n == 0 {
+/// Read the stream data and return stream data & its length
+fn read_stream(stream: &mut TcpStream) -> (Vec<u8>, usize) {
+    let buffer_size = 512;
+    let mut request_buffer = vec![];
+    // let us loop & try to read the whole request data
+    let mut request_len = 0usize;
+    loop {
+        let mut buffer = vec![0; buffer_size];
+        match stream.read(&mut buffer) {
+            Ok(n) => {
+               
+                if n == 0 {
+                    break;
+                } else {
+                    request_len += n;
+
+                    // we need not read more data in case we have read less data than buffer size
+                    if n < buffer_size {
+                        // let us only append the data how much we have read rather than complete existing buffer data
+                        // as n is less than buffer size
+                        request_buffer.append(&mut buffer[..n].to_vec()); // convert slice into vec
                         break;
                     } else {
-                        request_len += n;
-
-                        // we need not read more data in case we have read less data than buffer size
-                        if n  {
-                    println!("Error in reading stream data: {:?}", e);
-                    break;
+                        // append complete buffer vec data into request_buffer vec as n == buffer_size
+                        request_buffer.append(&mut buffer);
+                    }
                 }
             }
+            Err(e) => {
+                println!("Error in reading stream data: {:?}", e);
+                break;
+            }
         }
-
-        (request_buffer, request_len)
     }
+
+    (request_buffer, request_len)
+}
 ```
 
 
