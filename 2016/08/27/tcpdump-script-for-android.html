@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="english">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../theme/css/style.min.css?fc5adb95">
+
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+        <meta name="author" content="gauravssnl" />
+
+        <meta name="twitter:creator" content="@gauravssnl">
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content=", Android, " />
+
+<meta property="og:title" content="TCPDUMP SCRIPT FOR ANDROID "/>
+<meta property="og:url" content="../../../2016/08/27/tcpdump-script-for-android" />
+<meta property="og:description" content="Hello,everyone.Now,I want to share tcpdump script for Andriod and how to use it.Before doing that,let me tell what tcpdump is.On Wikipedia,tcpdump is described as: tcpdump is a common packet analyzer that runs under the command line. It allows the user to display TCP …" />
+<meta property="og:site_name" content="Gauravssnl Tech Blog" />
+<meta property="og:article:author" content="gauravssnl" />
+<meta property="og:article:published_time" content="2016-08-27T15:36:00+05:30" />
+<meta name="twitter:title" content="TCPDUMP SCRIPT FOR ANDROID ">
+<meta name="twitter:description" content="Hello,everyone.Now,I want to share tcpdump script for Andriod and how to use it.Before doing that,let me tell what tcpdump is.On Wikipedia,tcpdump is described as: tcpdump is a common packet analyzer that runs under the command line. It allows the user to display TCP …">
+
+        <title>TCPDUMP SCRIPT FOR ANDROID  · Gauravssnl Tech Blog
+</title>
+
+
+    </head>
+    <body>
+        <div id="content">
+            <div class="navbar navbar-static-top">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="../../../"><span class=site-name>Gauravssnl Tech Blog</span></a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right top-menu">
+                                <li >
+                                    <a href=
+                                       ../../..
+                                    >Home</a>
+                                </li>
+                                <li ><a href="../../../pages/about.html">About</a></li>
+                                <li ><a href="../../../categories.html">Categories</a></li>
+                                <li ><a href="../../../tags.html">Tags</a></li>
+                                <li ><a href="../../../archives.html">Archives</a></li>
+                                <li><form class="navbar-search" action="../../../search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span1"></div>
+                    <div class="span10">
+<article itemscope>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+        <h1>
+            <a href="../../../2016/08/27/tcpdump-script-for-android">
+                TCPDUMP SCRIPT FOR ANDROID
+            </a>
+        </h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+        <div class="span8 offset2 article-content">
+            
+            <p>Hello,everyone.Now,I want to share tcpdump script for Andriod and how to use it.Before doing that,let me tell what <a href="https://en.wikipedia.org/wiki/Tcpdump">tcpdump</a> is.On Wikipedia,tcpdump is described as:</p>
+<p><strong>tcpdump</strong> is a common packet analyzer that runs under the command line. It allows the user to display TCP/IP and other packets being transmitted or received over a network to which the computer is attached. Distributed under the BSD license,tcpdump is free software.</p>
+<p>tcpdump works on most Unix-like operating systems: Linux, Solaris, BSD, OS X, HP-UX, Android and AIX among others. In those systems, tcpdump uses the libpcap library to capture packets. The port of tcpdump for Windows is called WinDump; it usesWinPcap, the Windows port of libpcap.</p>
+<p><strong>tcpdump </strong>can be used for intercepting(capturing) the data packets sent by Android phone as it has Linux kernel.</p>
+<p><strong>DOWNLOAD :</strong>  <a href="http://www.strazzere.com/android/tcpdump">tcpdump</a></p>
+<p><strong>STEPS:</strong></p>
+<p>1.First trick:</p>
+<p>Download and move <em>tcpdump </em>script to <strong>/system/bin</strong> folder using file manager like Xplore File manager. Use Xplore or any Filemanager with "Superuser + Mount" mode for changing file permissions.Now,go to  <em>/system/bin/tcpdump</em> file and change its permission to <strong>777</strong> as shown in screenshot.</p>
+<p>Note: Your <strong>/system</strong> folder must have read &amp; write permission.</p>
+<p><img alt="Screenshot_2016-08-24-22-51-34" src="https://gauravssnl.files.wordpress.com/2016/08/screenshot_2016-08-24-22-51-34.png" /></p>
+<p>Another trick:</p>
+<p>Consider that <strong>tcpdump</strong> script which i downloaded is in <strong>/sdcard/download</strong> folder.Then you can type these commands in terminal to copy file <strong>tcpdump</strong> to <strong>/system/bin</strong> and for changing file permission of <strong>tcpdump</strong> to <em>777</em> (see screnshot).Type these in terminal carefully as shown in screenshot:</p>
+<p><img alt="Screenshot_2016-08-24-23-18-22" src="https://gauravssnl.files.wordpress.com/2016/08/screenshot_2016-08-24-23-18-22.png" /></p>
+<div class="highlight"><pre><span></span>su
+mount -o remount,rw  /system
+cp /sdcard/download/tcpdump /system/bin
+<span class="nb">cd</span> /system/bin
+chmod <span class="m">777</span> tcpdump
+mount -o remount,ro /system
+</pre></div>
+
+
+<p>2.Now,you have succesfully placed <strong>tcpdump</strong> in <strong>/system/bin</strong>.To run <strong>tcpdump</strong>, simply type this on Terminal as shown in screenshot:</p>
+<p><code>tcpdump</code></p>
+<p><img alt="Screenshot_2016-08-24-23-39-10.png" src="https://gauravssnl.files.wordpress.com/2016/08/screenshot_2016-08-24-23-39-10.png" /></p>
+<p>You can clearly see <strong>tcpdump</strong> running and all data packets sent on Terminal screen.</p>
+<p>If you want to save this log to a file <em>l.cap</em> for later analysis ,you can use this command in Terminal as shown in screenshot :</p>
+<div class="highlight"><pre><span></span>tcpdump -vv -s <span class="m">0</span> -w /sdcard/l.cap
+</pre></div>
+
+
+<p><img alt="Screenshot_2016-08-24-23-18-22" src="https://gauravssnl.files.wordpress.com/2016/08/screenshot_2016-08-24-23-18-221.png" /></p>
+<p>The options used are explained as:</p>
+<p><strong>-vv :</strong> puts tcpdump into verbose mode</p>
+<p><strong>-s 0 :</strong> sets the program to grab all packets</p>
+<p><strong>-w :</strong> writes the output to a file</p>
+<p>The output file l.cap generated will be as shown in screenshot.This file can be analyzed application using Wireshark.</p>
+<p><img alt="Screenshot_2016-08-24-23-20-25" src="https://gauravssnl.files.wordpress.com/2016/08/screenshot_2016-08-24-23-20-25.png" /></p>
+<p>Now,you successfully know how to use tcmpdump to intercept all data packets.</p>
+<p>Happy phreaking brothers.</p>
+<p>Thanks everyone for reading this post.Thanks to my friends and facebook groups where i learn.</p>
+<p>If you have any questions,please post in comments.</p>
+<p>Sharing is caring.</p>
+<p>©gauravssnl</p>
+
+
+             
+ 
+                <p id="post-share-links">
+    Share on:
+      <a href="https://twitter.com/intent/tweet?text=TCPDUMP%20SCRIPT%20FOR%20ANDROID&url=https%3A//gauravssnl.github.io/2016/08/27/tcpdump-script-for-android&via=gauravssnl" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
+ ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//gauravssnl.github.io/2016/08/27/tcpdump-script-for-android" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
+ ❄       <a href="mailto:?subject=TCPDUMP%20SCRIPT%20FOR%20ANDROID&amp;body=https%3A//gauravssnl.github.io/2016/08/27/tcpdump-script-for-android" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
+
+            
+            
+
+
+
+
+
+
+
+            <hr/>
+            <aside>
+            <nav>
+            <ul class="articles-timeline">
+                <li class="previous-article">« <a href="../../../2016/08/26/sinjector-v2-3-python-script-with-payload-support-and-how-to-use-it-with-ssh-tunnel-for-free-internet" title="Previous: SInjector v2.3 Python Script with Payload support and how to use it with SSH Tunnel for Free Internet">SInjector v2.3 Python Script with Payload support and how to use it with SSH Tunnel for Free Internet</a></li>
+                <li class="next-article"><a href="../../../2016/09/03/using-python-in-terminal-on-android-os-without-root-access" title="Next: Using Python in Terminal on Android OS without Root Access">Using Python in Terminal on Android OS without Root Access</a> »</li>
+            </ul>
+            </nav>
+            </aside>
+        </div>
+        <section id="article-sidebar" class="span2">
+            <h4>Published</h4>
+            <time itemprop="dateCreated" datetime="2016-08-27T15:36:00+05:30">Sat 27 August 2016</time>
+            <h4>Category</h4>
+            <a class="category-link" href="../../../categories.html#android-ref">Android</a>
+<h4>Stay in Touch</h4>
+<div id="sidebar-social-link">
+    <a href="https://github.com/gauravssnl" title="Github" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="GitHub" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#1B1817"/><path fill="#fff" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/in/gauravssnl/" title="LinkedIn" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="LinkedIn" role="img" viewBox="0 0 512 512" fill="#fff"><rect width="512" height="512" rx="15%" fill="#0077b5"/><circle cx="142" cy="138" r="37"/><path stroke="#fff" stroke-width="66" d="M244 194v198M142 194v198"/><path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32"/></svg>
+    </a>
+    <a href="https://twitter.com/gauravssnl" title="Twitter" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="Twitter" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#1da1f3"/><path fill="#fff" d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+    </a>
+    <a href="mailto:gauravssnl@gmail.com" title="My Email Address" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="Mail" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#328cff"/><path d="m250 186c-46 0-69 35-69 74 0 44 29 72 68 72 43 0 73-32 73-75 0-44-34-71-72-71zm-1-37c30 0 57 13 77 33 0-22 35-22 35 1v150c-1 10 10 16 16 9 25-25 54-128-14-187-64-56-149-47-195-15-48 33-79 107-49 175 33 76 126 99 182 76 28-12 41 26 12 39-45 19-168 17-225-82-38-68-36-185 67-248 78-46 182-33 244 32 66 69 62 197-2 246-28 23-71 1-71-32v-11c-20 20-47 32-77 32-57 0-108-51-108-108 0-58 51-110 108-110" fill="#fff"/></svg>
+    </a>
+    <a href="https://gauravssnl.github.io/feeds/all.atom.xml" title="RSS" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="RSS" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f80"/><circle cx="145" cy="367" r="35" fill="#fff"/><path fill="none" stroke="#fff" stroke-width="60" d="M109 241c89 0 162 73 162 162M109 127c152 0 276 124 276 276"/></svg>
+    </a>
+</div>
+            
+
+
+
+
+
+            
+
+
+
+
+
+        </section>
+</div>
+</article>
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>                    </div>
+                    <div class="span1"></div>
+                </div>
+            </div>
+        </div>
+<footer>
+    <div>
+        
+&copy; Copyright 2020 by Gaurav (@gauravssnl) and licensed under a <a rel="license"
+  href="http://creativecommons.org/licenses/by/4.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+  Creative Commons Attribution 4.0 International License</a>.
+
+    </div>
+
+
+
+
+    <div id="fpowered">
+        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow noopener noreferrer">Pelican</a>
+        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow noopener noreferrer">Elegant</a>
+    </div>
+</footer>            <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script src="../../../theme/js/elegant.prod.9e9d5ce754.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    <script>
+    (function () {
+        if (window.location.hash.match(/^#comment-\d+$/)) {
+            $('#comment_thread').collapse('show');
+        }
+    })();
+    window.onhashchange=function(){
+        if (window.location.hash.match(/^#comment-\d+$/))
+            window.location.reload(true);
+    }
+    $('#comment_thread').on('shown', function () {
+        var link = document.getElementById('comment-accordion-toggle');
+        var old_innerHTML = link.innerHTML;
+        $(link).fadeOut(200, function() {
+            $(this).text('Click here to hide comments').fadeIn(200);
+        });
+        $('#comment_thread').on('hidden', function () {
+            $(link).fadeOut(200, function() {
+                $(this).text(old_innerHTML).fadeIn(200);
+            });
+        })
+    })
+</script>
+
+    </body>
+    <!-- Theme: Elegant built for Pelican
+        License : MIT -->
+</html>
